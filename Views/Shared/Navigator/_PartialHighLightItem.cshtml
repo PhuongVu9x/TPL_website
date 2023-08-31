@@ -1,0 +1,20 @@
+﻿@using TPL_Web.Models;
+@{
+    var data = Model as TPLRes.HighLight;
+}
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <div style="height: 115px; width: 115px; background-color: darkgreen; border-radius: 50%;
+                            display: flex; align-self: center ">
+        <img style="height: 83px; width: 83px; display: flex; align-self: center "
+             src="@data.Hl_Icon"
+             class="ms-3"
+             data-src="@data.Hl_Icon" alt="No Image Found">
+    </div>
+</div>
+<div class="mt-3">
+    <h3 style="text-align: center;font-size:20px">@data.Hl_Title</h3>
+    <div class="bg_mota">
+        <p style="text-align: center;">@data.Hl_Intro</p>
+    </div>
+</div>

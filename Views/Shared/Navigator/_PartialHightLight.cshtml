@@ -1,71 +1,37 @@
-﻿<div class="row" style="background-color: #E7E7E7 ">
-    <div class="col-2"></div>
-    <div class="col-2 mt-3" style="border-color: white; border-right-style: solid;">
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <div style="height: 115px; width: 115px; background-color: darkgreen; border-radius: 50%; display: inline-flex; align-self: center ">
-                <img style="height: 83px; width: 83px; display: inline-flex; align-self: center "
-                     src="https://localhost:11113/Resources/Images/icon1.png"
-                     class="ms-3"
-                     data-src="https://localhost:11113/Resources/Images/icon1.png" alt="">
-            </div>
-        </div>
-        <div class="mt-3">
-            <h3 style="text-align: center;font-size:20px">ĐƠN GIÁ XÂY DỰNG NHÀ PHẦN THÔ MỚI NHẤT TPHCM</h3>
-            <div class="bg_mota">
-                <p style="text-align: center;">Miễn phí&nbsp;chi phí thiết kế+ giấy phép xây dựng</p>
-            </div>
-        </div>
-    </div>
+﻿@using TPL_Web.Models;
+@{
+    var hls = new List<TPLRes.HighLight>();
+    var hl1 = new TPLRes.HighLight();
+    hl1.Hl_Icon = "http://phuongvu-001-site1.itempurl.com/Resources/Images/icon1.png";
+    hl1.Hl_Title = "ĐƠN GIÁ XÂY DỰNG NHÀ PHẦN THÔ MỚI NHẤT TPHCM";
+    hl1.Hl_Intro = "Miễn phí&nbsp;chi phí thiết kế+ giấy phép xây dựng";
+    hls.Add(hl1);
 
-    <div class="col-2 mt-3" style="border-color: white; border-right-style: solid;">
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <div style="height: 115px; width: 115px; background-color: darkgreen; border-radius: 50%; display: inline-flex; align-self: center ">
-                <img style="height: 83px; width: 83px; display: inline-flex; align-self: center "
-                     src="https://localhost:11113/Resources/Images/icon2.png"
-                     class="ms-3"
-                     data-src="https://localhost:11113/Resources/Images/icon2.png" alt="">
-            </div>
-        </div>
-        <div class="mt-3">
-            <h3 style="text-align: center;font-size:20px">ĐƠN GIÁ XÂY DỰNG NHÀ PHẦN THÔ MỚI NHẤT TPHCM</h3>
-            <div class="bg_mota">
-                <p style="text-align: center;">Miễn phí&nbsp;chi phí thiết kế+ giấy phép xây dựng</p>
-            </div>
-        </div>
-    </div>
+    var hl2 = new TPLRes.HighLight();
+    hl2.Hl_Icon = "http://phuongvu-001-site1.itempurl.com/Resources/Images/icon2.png";
+    hl2.Hl_Title = "ĐƠN GIÁ XÂY DỰNG NHÀ PHẦN THÔ MỚI NHẤT TPHCM";
+    hl2.Hl_Intro = "Miễn phí&nbsp;chi phí thiết kế+ giấy phép xây dựng";
+    hls.Add(hl2);
 
-    <div class="col-2 mt-3" style="border-color: white; border-right-style: solid;">
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <div style="height: 115px; width: 115px; background-color: darkgreen; border-radius: 50%; display: inline-flex; align-self: center ">
-                <img style="height: 83px; width: 83px; display: inline-flex; align-self: center "
-                     src="https://localhost:11113/Resources/Images/icon3.png"
-                     class="ms-3"
-                     data-src="https://localhost:11113/Resources/Images/icon3.png" alt="">
-            </div>
-        </div>
-        <div class="mt-3">
-            <h3 style="text-align: center;font-size:20px">ĐƠN GIÁ XÂY DỰNG NHÀ PHẦN THÔ MỚI NHẤT TPHCM</h3>
-            <div class="bg_mota">
-                <p style="text-align: center;">Miễn phí&nbsp;chi phí thiết kế+ giấy phép xây dựng</p>
-            </div>
-        </div>
-    </div>
+    var hl3 = new TPLRes.HighLight();
+    hl3.Hl_Icon = "http://phuongvu-001-site1.itempurl.com/Resources/Images/icon3.png";
+    hl3.Hl_Title = "ĐƠN GIÁ XÂY DỰNG NHÀ PHẦN THÔ MỚI NHẤT TPHCM";
+    hl3.Hl_Intro = "Miễn phí&nbsp;chi phí thiết kế+ giấy phép xây dựng";
+    hls.Add(hl3);
 
-    <div class="col-2 mt-3" style="border-color: white; border-right-style: solid;">
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <div style="height: 115px; width: 115px; background-color: darkgreen; border-radius: 50%; display: inline-flex; align-self: center ">
-                <img style="height: 83px; width: 83px; display: inline-flex; align-self: center "
-                     src="https://localhost:11113/Resources/Images/icon4.png"
-                     class="ms-3"
-                     data-src="https://localhost:11113/Resources/Images/icon4.png" alt="">
-            </div>
+    var hl4 = new TPLRes.HighLight();
+    hl4.Hl_Icon = "http://phuongvu-001-site1.itempurl.com/Resources/Images/icon4.png";
+    hl4.Hl_Title = "ĐƠN GIÁ XÂY DỰNG NHÀ PHẦN THÔ MỚI NHẤT TPHCM";
+    hl4.Hl_Intro = "Miễn phí&nbsp;chi phí thiết kế+ giấy phép xây dựng";
+    hls.Add(hl4);
+}
+<div class="row" style="background-color: #E7E7E7 ">
+    <div class="col-md-2"></div>
+    @foreach (var item in hls)
+    {
+        <div class="col-md-2 mt-3" style="border-color: white; border-right-style: solid;">
+            @Html.Partial("~/Views/Shared/Navigator/_PartialHighLightItem.cshtml", item)
         </div>
-        <div class="mt-3">
-            <h3 style="text-align: center;font-size:20px">ĐƠN GIÁ XÂY DỰNG NHÀ PHẦN THÔ MỚI NHẤT TPHCM</h3>
-            <div class="bg_mota">
-                <p style="text-align: center;">Miễn phí&nbsp;chi phí thiết kế+ giấy phép xây dựng</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-2"></div>
+    }
+    <div class="col-md-2"></div>
 </div>

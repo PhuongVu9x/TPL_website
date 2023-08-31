@@ -1,0 +1,14 @@
+﻿@using TPL_Web.Models;
+@{ 
+    var tmp = @Model.Active as string;
+}
+<div class="@tmp">
+    <div class="row">
+        @foreach (var item in Model.SliderItems as List<TPLRes.SliderItem>)
+        {
+            <div class="col-md-3">
+                @Html.Partial("~/Views/Shared/Blog/_PartialContructionSliderItem.cshtml",item as TPLRes.SliderItem)
+            </div>
+        }
+    </div>
+</div>

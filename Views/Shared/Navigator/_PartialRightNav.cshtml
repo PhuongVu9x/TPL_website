@@ -1,65 +1,21 @@
 ﻿<ul class="sidebar-wrapper ul-reset">
-    <li style="list-style-type: none;" id="media_image-2" class="widget widget_media_image">
-        <span class="widget-title ">
-            <h3>Đội ngũ nhân sự</h3>
-        </span><div class="is-divider small"></div>
-        <img width="300" height="300" src="https://localhost:11113/Resources/Images/thietke3.jpg"
-             class="image wp-image-361 attachment-medium size-medium lazy-load-active"
-             alt="" decoding="async" loading="lazy" style="max-width: 100%; height: auto;"
+    <li style="list-style-type: none;">
+        <h3>Đội ngũ nhân sự</h3>
+        <img src="~/Resources/Images/thietke3.jpg"
+             class="img-response" alt="" />
     </li>
-    <li style="list-style-type: none;" id="media_image-2" class="widget widget_media_image">
-        <span class="widget-title ">
-            <h3>
-                Mẫu nhà phố đẹp
-            </h3>
-        </span><div class="is-divider small"></div>
-        <img width="300" height="300" src="https://localhost:11113/Resources/Images/thietke3.jpg"
-             class="image wp-image-361 attachment-medium size-medium lazy-load-active"
-             alt="" decoding="async" loading="lazy" style="max-width: 100%; height: auto;"
+    <li style="list-style-type: none;">
+        <h3>Mẫu nhà phố đẹp</h3>
+        <img src="~/Resources/Images/thietke3.jpg"
+             class="img-response" alt="" />
     </li>
-    <li style="list-style-type: none;"
-        <span class="widget-title "><span> Bài viết mới</span></span>
-                <div class="is-divider small"></div>
-                <ul class="m-0 p-0">
-                    <li style="list-style-type: none;">
-                        <div class="row">
-                            <div class="col-2">
-                                <img src="https://localhost:11113/Resources/Images/thietke3.jpg" style="width:50px;height:50px;" alt="Alternate Text" />
-                            </div>
-                            <div class="col-10">
-                                <a href="http://thietke2.giaodienwebmau.com/trang-tri-nha-hop-phong-thuy-cho-nguoi-menh-kim/" 
-                                   title="Trang trí nhà hợp phong thủy cho người mệnh Kim">Trang trí nhà hợp phong thủy cho người mệnh Kim</a>
-                                <span class="post_comments op-7 block is-xsmall">
-                                <a href="http://thietke2.giaodienwebmau.com/trang-tri-nha-hop-phong-thuy-cho-nguoi-menh-kim/#respond"></a></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li style="list-style-type: none;">
-                        <div class="row">
-                            <div class="col-2">
-                                <img src="https://localhost:11113/Resources/Images/thietke3.jpg" style="width:50px;height:50px;" alt="Alternate Text" />
-                            </div>
-                            <div class="col-10">
-                                <a href="http://thietke2.giaodienwebmau.com/trang-tri-nha-hop-phong-thuy-cho-nguoi-menh-kim/" 
-                                   title="Trang trí nhà hợp phong thủy cho người mệnh Kim">Trang trí nhà hợp phong thủy cho người mệnh Kim</a>
-                                <span class="post_comments op-7 block is-xsmall">
-                                <a href="http://thietke2.giaodienwebmau.com/trang-tri-nha-hop-phong-thuy-cho-nguoi-menh-kim/#respond"></a></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li style="list-style-type: none;">
-                        <div class="row">
-                            <div class="col-2">
-                                <img src="https://localhost:11113/Resources/Images/thietke3.jpg" style="width:50px;height:50px;" alt="Alternate Text" />
-                            </div>
-                            <div class="col-10">
-                                <a href="http://thietke2.giaodienwebmau.com/trang-tri-nha-hop-phong-thuy-cho-nguoi-menh-kim/" 
-                                   title="Trang trí nhà hợp phong thủy cho người mệnh Kim">Trang trí nhà hợp phong thủy cho người mệnh Kim</a>
-                                <span class="post_comments op-7 block is-xsmall">
-                                <a href="http://thietke2.giaodienwebmau.com/trang-tri-nha-hop-phong-thuy-cho-nguoi-menh-kim/#respond"></a></span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+    <li style="list-style-type: none;">
+        <h3>Bài viết mới</h3>
+        <ul class="m-0 p-0">
+            @Html.Partial("~/Views/Shared/Navigator/_PartialRightNavBlogItem.cshtml")
+            @Html.Partial("~/Views/Shared/Navigator/_PartialRightNavBlogItem.cshtml")
+            @Html.Partial("~/Views/Shared/Navigator/_PartialRightNavBlogItem.cshtml")
+            @Html.Partial("~/Views/Shared/Navigator/_PartialRightNavBlogItem.cshtml")
+        </ul>
     </li>
 </ul>

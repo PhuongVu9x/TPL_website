@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<div class="container body-content">
+    <main  style="margin-top:100px;">
+        <div class="row">
+            <div class="col-md-8">
+                <h3>CÔNG TY THIẾT KẾ KIẾN TRÚC VÀ XÂY DỰNG TƯỜNG VY</h3>
+                <ul>
+                    <li>Địa chỉ: 33, 30 Phan Văn Hớn, Tân Thới Nhất, Quận 12, Hồ Chí Minh</li>
+                    <li>Hotline: 0813 88 22 33</li>
+                    <li>Fanpage:&nbsp;<a href="https://www.facebook.com/xaydungthangloivsc">Xây dựng Thắng Lợi</a></li>
+                </ul>
+                <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
+
+                <form action="#" method="post" class="">
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label><b>Tên của bạn</b></label>
+                            <input class="form-control" aria-required="true" placeholder="Tên của bạn..." type="text" name="">
+                        </div>
+                        <div class="col-md-6">
+                            <label><b>Số điện thoại</b></label>
+                            <input size="40" class="form-control" placeholder="Số điện thoại..." type="text" name="">
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <label><b>Địa chỉ</b></label>
+                            <input class="form-control" placeholder="Địa chỉ..." type="text" name="">
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <label><b>Nội dung</b></label>
+                            <textarea cols="40" rows="5" class="form-control" placeholder="Nội dung..." name=""></textarea>
+                        </div>
+                    </div>
+                    <input class="mt-2 float-end" type="submit" value="Gửi form">
+                </form>
+            </div>
+            <div class="col-md-4">
+                @Html.Partial("~/Views/Shared/Navigator/_PartialRightNav.cshtml")
+            </div>
+        </div>
+    </main>
+</div>

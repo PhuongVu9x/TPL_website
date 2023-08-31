@@ -1,44 +1,49 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<main aria-labelledby="title">
-    <div class="row">
-        <div class="col-8">
-            <h3>CÔNG TY THIẾT KẾ KIẾN TRÚC VÀ XÂY DỰNG THẮNG LỢI</h3>
-            <ul>
-                <li>Địa chỉ: 33, 30 Phan Văn Hớn, Tân Thới Nhất, Quận 12, Hồ Chí Minh</li>
-                <li>Hotline: 0813 88 22 33</li>
-                <li>Fanpage:&nbsp;<a href="https://www.facebook.com/xaydungthangloivsc">Xây dựng Thắng Lợi</a></li>
-            </ul>
-            <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
+<div class="container body-content">
+    <main  style="margin-top:100px;">
+        <div class="row">
+            <div class="col-md-8">
+                <h3>CÔNG TY THIẾT KẾ KIẾN TRÚC VÀ XÂY DỰNG TƯỜNG VY</h3>
+                <ul>
+                    <li>Địa chỉ: 33, 30 Phan Văn Hớn, Tân Thới Nhất, Quận 12, Hồ Chí Minh</li>
+                    <li>Hotline: 0813 88 22 33</li>
+                    <li>Fanpage:&nbsp;<a href="https://www.facebook.com/xaydungthangloivsc">Xây dựng Thắng Lợi</a></li>
+                </ul>
+                <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
 
-            <div class="wpcf7 js" id="wpcf7-f422-p57-o1" lang="vi" dir="ltr">
-                <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-                <form action="/lien-he/#wpcf7-f422-p57-o1" method="post" class="wpcf7-form init" aria-label="Form liên hệ" novalidate="novalidate" data-status="init">
-                    <div style="display: none;">
-                        <input type="hidden" name="_wpcf7" value="422">
-                        <input type="hidden" name="_wpcf7_version" value="5.7.7">
-                        <input type="hidden" name="_wpcf7_locale" value="vi">
-                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f422-p57-o1">
-                        <input type="hidden" name="_wpcf7_container_post" value="57">
-                        <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                <form action="#" method="post" class="">
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label><b>Tên của bạn</b></label>
+                            <input class="form-control" aria-required="true" placeholder="Tên của bạn..." type="text" name="">
+                        </div>
+                        <div class="col-md-6">
+                            <label><b>Số điện thoại</b></label>
+                            <input size="40" class="form-control" placeholder="Số điện thoại..." type="text" name="">
+                        </div>
                     </div>
-                    <p>
-                        <label>Tên của bạn</label><br>
-                        <span class="wpcf7-form-control-wrap" data-name="text-12"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Tên của bạn..." value="" type="text" name="text-12"></span><br>
-                        <label>Địa chỉ</label><br>
-                        <span class="wpcf7-form-control-wrap" data-name="text-14"><input size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Địa chỉ..." value="" type="text" name="text-14"></span><br>
-                        <label>Số điện thoại</label><br>
-                        <span class="wpcf7-form-control-wrap" data-name="tel-855"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Số điện thoại..." value="" type="tel" name="tel-855"></span><br>
-                        <label>Nội dung</label><br>
-                        <span class="wpcf7-form-control-wrap" data-name="textarea-687"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Nội dung..." name="textarea-687"></textarea></span><br>
-                        <input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="Gửi form"><span class="wpcf7-spinner"></span>
-                    </p><div class="wpcf7-response-output" aria-hidden="true"></div>
+
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <label><b>Địa chỉ</b></label>
+                            <input class="form-control" placeholder="Địa chỉ..." type="text" name="">
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <label><b>Nội dung</b></label>
+                            <textarea cols="40" rows="5" class="form-control" placeholder="Nội dung..." name=""></textarea>
+                        </div>
+                    </div>
+                    <input class="mt-2 float-end" type="submit" value="Gửi form">
                 </form>
             </div>
+            <div class="col-md-4">
+                @Html.Partial("~/Views/Shared/Navigator/_PartialRightNav.cshtml")
+            </div>
         </div>
-        <div class="col-4">
-            @Html.Partial("~/Views/Shared/Navigator/_PartialRightNav.cshtml")
-        </div>
-    </div>
-</main>
+    </main>
+</div>

@@ -1,0 +1,37 @@
+﻿@using TPL_Web.Models;
+@{
+    var hls = new List<TPLRes.HighLight>();
+    var hl1 = new TPLRes.HighLight();
+    hl1.Hl_Icon = "http://phuongvu-001-site1.itempurl.com/Resources/Images/icon1.png";
+    hl1.Hl_Title = "ĐƠN GIÁ XÂY DỰNG NHÀ PHẦN THÔ MỚI NHẤT TPHCM";
+    hl1.Hl_Intro = "Miễn phí&nbsp;chi phí thiết kế+ giấy phép xây dựng";
+    hls.Add(hl1);
+
+    var hl2 = new TPLRes.HighLight();
+    hl2.Hl_Icon = "http://phuongvu-001-site1.itempurl.com/Resources/Images/icon2.png";
+    hl2.Hl_Title = "ĐƠN GIÁ XÂY DỰNG NHÀ PHẦN THÔ MỚI NHẤT TPHCM";
+    hl2.Hl_Intro = "Miễn phí&nbsp;chi phí thiết kế+ giấy phép xây dựng";
+    hls.Add(hl2);
+
+    var hl3 = new TPLRes.HighLight();
+    hl3.Hl_Icon = "http://phuongvu-001-site1.itempurl.com/Resources/Images/icon3.png";
+    hl3.Hl_Title = "ĐƠN GIÁ XÂY DỰNG NHÀ PHẦN THÔ MỚI NHẤT TPHCM";
+    hl3.Hl_Intro = "Miễn phí&nbsp;chi phí thiết kế+ giấy phép xây dựng";
+    hls.Add(hl3);
+
+    var hl4 = new TPLRes.HighLight();
+    hl4.Hl_Icon = "http://phuongvu-001-site1.itempurl.com/Resources/Images/icon4.png";
+    hl4.Hl_Title = "ĐƠN GIÁ XÂY DỰNG NHÀ PHẦN THÔ MỚI NHẤT TPHCM";
+    hl4.Hl_Intro = "Miễn phí&nbsp;chi phí thiết kế+ giấy phép xây dựng";
+    hls.Add(hl4);
+}
+<div class="row" style="background-color: #E7E7E7 ">
+    <div class="col-md-2"></div>
+    @foreach (var item in hls)
+    {
+        <div class="col-md-2 mt-3" style="border-color: white; border-right-style: solid;">
+            @Html.Partial("~/Views/Shared/Navigator/_PartialHighLightItem.cshtml", item)
+        </div>
+    }
+    <div class="col-md-2"></div>
+</div>

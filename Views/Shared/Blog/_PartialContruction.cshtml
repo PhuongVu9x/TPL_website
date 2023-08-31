@@ -1,113 +1,66 @@
-﻿<div id="contructorSlider" class="carousel slide carousel-fade carousel-dark" data-mdb-ride="carousel">
+﻿@using TPL_Web.Models;
+@{
+    var slider1 = new TPLRes.Slider();
+    slider1.Active = "carousel-item active";
+    var sliderItem1 = new TPLRes.SliderItem();
+    sliderItem1.Si_Icon = "http://phuongvu-001-site1.itempurl.com/Resources/Images/thietke1.jpg";
+    sliderItem1.Si_Title = "Mẫu thiết kế nhà chú phương quận gò vấp";
+    sliderItem1.Si_Description = "Mẫu nhà phố 1 trệt lửng 2 lầu + tum che cấu thang Quý vị xem tham khảo mẫu nội thất.";
+    slider1.SliderItems = new List<TPLRes.SliderItem>();
+    slider1.SliderItems.Add(sliderItem1);
+    slider1.SliderItems.Add(sliderItem1);
+    slider1.SliderItems.Add(sliderItem1);
+    slider1.SliderItems.Add(sliderItem1);
+
+    var slider2 = new TPLRes.Slider();
+    slider2.Active = "carousel-item";
+    var sliderItem2 = new TPLRes.SliderItem();
+    sliderItem2.Si_Icon = "http://phuongvu-001-site1.itempurl.com/Resources/Images/thietke2.jpg";
+    sliderItem2.Si_Title = "Mẫu thiết kế nhà chú phương quận gò vấp";
+    sliderItem2.Si_Description = "Mẫu nhà phố 1 trệt lửng 2 lầu + tum che cấu thang Quý vị xem tham khảo mẫu nội thất.";
+    slider2.SliderItems = new List<TPLRes.SliderItem>();
+    slider2.SliderItems.Add(sliderItem2);
+    slider2.SliderItems.Add(sliderItem2);
+    slider2.SliderItems.Add(sliderItem2);
+    slider2.SliderItems.Add(sliderItem2);
+
+    var slider3 = new TPLRes.Slider();
+    slider3.Active = "carousel-item";
+    var sliderItem3 = new TPLRes.SliderItem();
+    sliderItem3.Si_Icon = "http://phuongvu-001-site1.itempurl.com/Resources/Images/thietke3.jpg";
+    sliderItem3.Si_Title = "Mẫu thiết kế nhà chú phương quận gò vấp";
+    sliderItem3.Si_Description = "Mẫu nhà phố 1 trệt lửng 2 lầu + tum che cấu thang Quý vị xem tham khảo mẫu nội thất.";
+    slider3.SliderItems = new List<TPLRes.SliderItem>();
+    slider3.SliderItems.Add(sliderItem3);
+    slider3.SliderItems.Add(sliderItem3);
+    slider3.SliderItems.Add(sliderItem3);
+    slider3.SliderItems.Add(sliderItem3);
+
+    var sliders = new List<TPLRes.Slider>();
+    sliders.Add(slider1);
+    sliders.Add(slider2);
+    sliders.Add(slider3);
+}
+
+<h1 style="display: flex; justify-content: center; align-items: center;" class="mt-5">THIẾT KẾ CÔNG TRÌNH</h1>
+<div id="contructorSlider" class="carousel slide carousel-slide carousel-dark ms-2 me-2" data-mdb-ride="carousel">
     <!-- Inner -->
-    <div class="carousel-inner rounded-5 shadow-4-strong">
-        <div class="carousel-item active">
-            <div class="row">
-                <div class="col-3">
-                    <a href="/Home/Blog" class="plain">
-                        <div class="box box-normal box-text-bottom box-blog-post has-hover">
-                            <div class="box-image">
-                                <div class="image-overlay-add image-zoom image-cover">
-                                    <img style="width:306px;height:420px;"
-                                         src="https://localhost:11113/Resources/Images/thietke2.jpg"
-                                         data-src="https://localhost:11113/Resources/Images/thietke2.jpg"
-                                         class="attachment-original size-original wp-post-image lazy-load-active"
-                                         alt="" decoding="async" loading="lazy">
-                                    <div class="overlay" style="background-color: rgba(0, 76, 0, 0.34)"></div>
-                                </div>
-                            </div>
-                            <div class="box-text text-left">
-                                <div class="box-text-inner blog-post-inner">
-                                    <h5 class="post-title is-large ">Mẫu thiết kế nhà chú phương quận gò vấp</h5>
-                                    <div class="is-divider"></div>
-                                    <p class="from_the_blog_excerpt ">Mẫu nhà phố 1 trệt lửng 2 lầu + tum che cấu thang Quý vị xem tham khảo mẫu nội thất, để có thể...					</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <a href="/Home/Blog" class="plain">
-                        <div class="box box-normal box-text-bottom box-blog-post has-hover">
-                            <div class="box-image">
-                                <div class="image-overlay-add image-zoom image-cover">
-                                    <img style="width:306px;height:420px;"
-                                         src="https://localhost:11113/Resources/Images/thietke2.jpg"
-                                         data-src="https://localhost:11113/Resources/Images/thietke2.jpg"
-                                         class="attachment-original size-original wp-post-image lazy-load-active"
-                                         alt="" decoding="async" loading="lazy">
-                                    <div class="overlay" style="background-color: rgba(0, 76, 0, 0.34)"></div>
-                                </div>
-                            </div>
-                            <div class="box-text text-left">
-                                <div class="box-text-inner blog-post-inner">
-                                    <h5 class="post-title is-large ">Mẫu thiết kế nhà chú phương quận gò vấp</h5>
-                                    <div class="is-divider"></div>
-                                    <p class="from_the_blog_excerpt ">Mẫu nhà phố 1 trệt lửng 2 lầu + tum che cấu thang Quý vị xem tham khảo mẫu nội thất, để có thể...					</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <a href="/Home/Blog" class="plain">
-                        <div class="box box-normal box-text-bottom box-blog-post has-hover">
-                            <div class="box-image">
-                                <div class="image-overlay-add image-zoom image-cover">
-                                    <img style="width:306px;height:420px;"
-                                         src="https://localhost:11113/Resources/Images/thietke2.jpg"
-                                         data-src="https://localhost:11113/Resources/Images/thietke2.jpg"
-                                         class="attachment-original size-original wp-post-image lazy-load-active"
-                                         alt="" decoding="async" loading="lazy">
-                                    <div class="overlay" style="background-color: rgba(0, 76, 0, 0.34)"></div>
-                                </div>
-                            </div>
-                            <div class="box-text text-left">
-                                <div class="box-text-inner blog-post-inner">
-                                    <h5 class="post-title is-large ">Mẫu thiết kế nhà chú phương quận gò vấp</h5>
-                                    <div class="is-divider"></div>
-                                    <p class="from_the_blog_excerpt ">Mẫu nhà phố 1 trệt lửng 2 lầu + tum che cấu thang Quý vị xem tham khảo mẫu nội thất, để có thể...					</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <a href="/Home/Blog" class="plain">
-                        <div class="box box-normal box-text-bottom box-blog-post has-hover">
-                            <div class="box-image">
-                                <div class="image-overlay-add image-zoom image-cover">
-                                    <img style="width:306px;height:420px;"
-                                         src="https://localhost:11113/Resources/Images/thietke2.jpg"
-                                         data-src="https://localhost:11113/Resources/Images/thietke2.jpg"
-                                         class="attachment-original size-original wp-post-image lazy-load-active"
-                                         alt="" decoding="async" loading="lazy">
-                                    <div class="overlay" style="background-color: rgba(0, 76, 0, 0.34)"></div>
-                                </div>
-                            </div>
-                            <div class="box-text text-left">
-                                <div class="box-text-inner blog-post-inner">
-                                    <h5 class="post-title is-large ">Mẫu thiết kế nhà chú phương quận gò vấp</h5>
-                                    <div class="is-divider"></div>
-                                    <p class="from_the_blog_excerpt ">Mẫu nhà phố 1 trệt lửng 2 lầu + tum che cấu thang Quý vị xem tham khảo mẫu nội thất, để có thể...					</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+    <div class="carousel-inner rounded-5 shadow-4-strong d-flex align-items-center">
+        @foreach (var slider in sliders)
+        {
+            @Html.Partial("~/Views/Shared/Blog/_PartialContructionSlider.cshtml", slider)
+        }
+        <!-- Controls -->
+        <div class="btn-slider d-flex align-items-center justify-content-center position-relative" style="width: 100%; height: auto;">
+            <button class="carousel-control-prev position-absolute" type="button" data-mdb-target="#contructorSlider" data-mdb-slide="prev">
+                <i class="fa-solid fa-circle-chevron-left fa-2xl text-light"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next position-absolute" type="button" data-mdb-target="#contructorSlider" data-mdb-slide="next">
+                <i class="fa-solid fa-circle-chevron-right fa-2xl text-light"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        @Html.Partial("~/Views/Shared/Blog/_PartialContructionItem.cshtml")
-        @Html.Partial("~/Views/Shared/Blog/_PartialContructionItem.cshtml")
     </div>
-    <!-- Inner -->
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-mdb-target="#contructorSlider" data-mdb-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-mdb-target="#contructorSlider" data-mdb-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
 </div>
